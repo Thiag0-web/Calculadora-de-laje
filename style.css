@@ -43,3 +43,9 @@ button{
     width: 94%;
     
 }
+
+textarea {
+    width: 93%;
+    height: 6em; 
+    resize: both;  
+}
