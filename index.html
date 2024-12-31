@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de laje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculadora de laje</h1>
+    <section>
+        <h2>Calcular o metro² da laje</h2>
+        <p>O tamanho do trilho é 0,42cm</p>
+        <label for="primeiroLado">Primeiro lado da laje</label>
+        <input type="number" id="primeiroLado" placeholder="Primeiro lado">
+
+        <br><br>
+
+        <label for="segundoLado">Segundo lado da laje</label>
+        <input type="number" id="segundoLado" placeholder="Segundo lado">
+        <button onclick="calcular()">Calcular</button>
+        <br><br>
+
+        <div>
+            <textarea id="resultado" rows="10" cols="74"></textarea>
+        </div>
+
+    </section>
+
+    
+
+    <script src="quadrado.js"></script>
+</body>
+
+</html>
