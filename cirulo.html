@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Material para Área Circular</title>
+    <script src="circulo.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, button {
+            margin-top: 5px;
+        }
+        textarea {
+            width: 100%;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cálculo de Material para Círculo</h1>
+    <form onsubmit="calcularCirculo(); return false;">
+        <label for="raio">Raio do Círculo (m):</label>
+        <input type="number" id="raio" placeholder="Insira o raio" step="0.01" required>
+        
+        <button type="submit">Calcular</button>
+        
+        <label for="resultado">Resultado:</label>
+        <textarea id="resultado" rows="5" readonly></textarea>
+    </form>
+</body>
+</html>
